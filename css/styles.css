@@ -31,15 +31,12 @@ header{
     justify-content: space-between;
     align-items: center ;
 }
-
 .menu__img-logo{
     height: 60px;
 }
-
 .menu__btn-menu{
     display: none;
 }
-
 .menu__enlaces a{
     font-family: 'poppins'; 
     padding: 2em;
@@ -48,30 +45,90 @@ header{
     color: var(--colorPrimario);
     font-weight: 1000;
 }
-
 .menu__enlaces a:hover{
     color: var(--colortitulos);   
 }
 
-@media screen and (max-width: 1023px) {
-    .menu{
-        flex-direction: column;
-    }
-    .menu__logo{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        padding: 1em;
-    }
-    .menu__btn-menu{
-        display: block;
-        color: var(--colorPrimario );
-        font-size: 1.5em;
-    }
-    .menu__enlaces{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+@media screen and (max-width: 1023px){
+.menu{
+    flex-direction: column;
 }
+.menu__logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+}
+.menu__btn-menu{
+    display: block;
+    color: var(--colorPrimario );
+    font-size: 1.5em;
+}
+.menu__enlaces{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+}
+.mainbanner{
+    position: relative;
+    padding: 18em 14em ;
+    background: linear-gradient(#06f7e3, rgb(235, 18, 188));
+    top: 61px;
+}
+.mainbanner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--colorsecundario);
+    mix-blend-mode: color;
+    opacity: .2;
+}
+.mainbanner__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .4;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    z-index: 29;
+    position: absolute;
+}
+.centrado{
+    display: block;
+    margin: auto;
+}
+.mainbanner__data{
+    text-align: center;
+}
+.mainbanner__titulo{
+    color: var(--colorsecundario);
+    font-family: 'poppins';
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.mainbanner__parrafo{
+    color: var(--colorsecundario);
+    font-family: 'poppins';
+    font-weight: 700;
+    font-size: .9em;
+}
+.mainbanner__boton{
+    background-color: var(--colorterciario);
+    color: #ffff;
+    padding: 1em 1.2em;
+    text-decoration: none;
+    border-radius: 5em;
+    font-weight: 500;
+    font-family: 'poppins';
+}
+
