@@ -101,7 +101,13 @@ header{
     width: 100%;
     margin: auto;
     z-index: 29;
-    position: absolute;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
 }
 .centrado{
     display: block;
@@ -132,3 +138,18 @@ header{
     font-family: 'poppins';
 }
 
+@media screen and (max-width: 850px){
+.mainbanner{
+    padding: 12em 6em;
+}
+.mainbanner__boton{
+    display: block;
+    margin-bottom: 1em;
+}
+.mainbanner__titulo{
+    font-size: 2em;
+}
+.mainbanner__parrafo{
+    font-size: 1em;
+}
+}
