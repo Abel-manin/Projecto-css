@@ -1,0 +1,151 @@
+/*Paleta de colores*/
+:root{
+    --colorPrimario: #EC111A;
+    --colorsecundario: #ffffff;
+    --colorterciario: #eb0781;
+    --colortitulos: #00dfd4;
+    --colorparrafos: #282D31;
+    --colorsombras: #333333;
+    --colorvorder: #979797;
+}
+/* CONECTOR UNIVERSAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    background-image: url(../img/fondo-login.jpg);
+    background-size: cover;
+}
+/*menu*/
+header{
+    background-color: var(--colorsecundario);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 40px 1px 40px var(--colorparrafos);
+}
+.menu{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+}
+.menu__img-logo{
+    height: 60px;
+}
+.menu__btn-menu{
+    display: none;
+}
+.menu__enlaces a{
+    font-family: 'poppins'; 
+    padding: 2em;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: var(--colorPrimario);
+    font-weight: 1000;
+}
+.menu__enlaces a:hover{
+    color: var(--colortitulos);   
+}
+
+@media screen and (max-width: 1023px){
+.menu{
+    flex-direction: column;
+}
+.menu__logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+}
+.menu__btn-menu{
+    display: block;
+    color: var(--colorPrimario );
+    font-size: 1.5em;
+}
+.menu__enlaces{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+}
+article.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ttt{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.imgsit{
+    width: 35%;
+    height: 100%;
+}
+.Titu{
+    text-align: center;
+    font-family: 'poppins';
+}
+.all__s{
+    background-color: var(--colorsecundario);
+    padding: 1em;
+    display: grid;
+    border: 2.5px solid var(--colorPrimario);
+}
+.all__s input{
+    border: var(--colorPrimario);
+}
+::placeholder{
+    font-family: 'poppins';
+}
+.sub a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.sub{
+    text-align: center;
+    background-color: var(--colorPrimario);
+    color: var(--colorsecundario);
+    padding: 3.5px;
+}
+.sub2{
+    text-align: center;
+    font-family: 'poppins';
+
+}
+.sub2 a{
+    color: var(--colorPrimario);
+}
+.Titulos h1{
+    align-items: center;
+}
+footer{
+    background-color: var(--colorsombras);
+    color: var(--colorsecundario);
+    padding: 3em;
+}
+.Iconos-pie{
+    font-size: 3em;
+}
+.pie .info{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 1em;
+}
+.derechos{
+    background-color: var(--colorparrafos);
+    color: var(--colorsecundario);
+    font-family: 'poppins';
+    padding: .5em;
+}
+.devlab{
+    text-decoration: none;
+    color: var(--colorsecundario);
+}

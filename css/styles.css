@@ -224,3 +224,26 @@ header{
     padding: .3em;
     box-shadow: 0px 0px 6px #000;
 }
+footer{
+    background-color: var(--colorsombras);
+    color: var(--colorsecundario);
+    padding: 3em;
+}
+.Iconos-pie{
+    font-size: 3em;
+}
+.pie .info{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 1em;
+}
+.derechos{
+    background-color: var(--colorparrafos);
+    color: var(--colorsecundario);
+    font-family: 'poppins';
+    padding: .5em;
+}
+.devlab{
+    text-decoration: none;
+    color: var(--colorsecundario);
+}
