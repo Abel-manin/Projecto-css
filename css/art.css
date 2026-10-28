@@ -1,0 +1,55 @@
+/*Paleta de colores*/
+:root{
+    --colorPrimario: #EC111A;
+    --colorsecundario: #ffffff;
+    --colorterciario: #800505;
+    --colortitulos: #dbdbdb;
+    --fontfamily: 'poppins'
+}
+/* CONECTOR UNIVERSAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+.art__tra{
+    align-content: center;
+}
+.img__log{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 2em;
+}
+.titulo__log{
+    font-size: 1.5em;
+    font-family: var(--fontfamily);
+    text-align: center;
+    padding: 8px auto;
+}
+.subtitulo__log{
+    font-size: 1em;
+    font-family: var(--fontfamily);
+    text-align: center;
+}
+.log__input{
+    justify-content:flex-start;
+    background: var(--colortitulos);
+    padding: 8px;
+    border-bottom: 2px solid var(--colorPrimario);
+    border-top: var(--colorsecundario); 
+    border-left: var(--colorsecundario) ;
+}
+.enlace__login{
+    text-align: right;
+    text-decoration: none;
+    color: var(--colorterciario);
+    font-family: var(--fontfamily);
+    font-size: 1em;
+}
+.boton__login{
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--colorPrimario);
+    color: var(--colorsecundario);
+}
